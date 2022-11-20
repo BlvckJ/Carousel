@@ -31,7 +31,6 @@
   top: 50%; /* center navigation buttons on the slide */
   transform: translateY(-50%); /* align navigation buttons */
 }
-
 .carousel .carousel-actions button {
   border-radius: 50px;
   background-color: white;
@@ -41,8 +40,22 @@
   cursor: pointer;
   width: 40px;
   height: 40px;
+  opacity: 0;
+  
 }
 
+.carousel .carousel-actions:hover button {
+  border-radius: 50px;
+  background-color: white;
+  border: 0;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  transition: opacity 100ms;
+  opacity: 1;
+}
 
 .carousel .carousel-actions button#carousel-button-prev {
   margin-left: 20px; /* prevent previous button from touching the side*/
